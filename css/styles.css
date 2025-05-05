@@ -455,10 +455,6 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
-  display: none;
-}
-.backdrop.is-open {
-  display: flex;
 }
 .modal {
   position: relative;
@@ -466,8 +462,11 @@ h2 {
   border-radius: 4px;
   width: 408px;
   height: 584px;
+  display: none;
 }
-/* is-open sınıfı eklendiğinde modal görünür hale gelir */
+.modal.is-open {
+  display: block;
+}
 .modal-close {
   position: absolute;
   width: 24px;
