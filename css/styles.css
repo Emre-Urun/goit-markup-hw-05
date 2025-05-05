@@ -455,6 +455,10 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
+  display: none;
+}
+.backdrop.is-open {
+  display: flex;
 }
 .modal {
   position: relative;
@@ -462,10 +466,6 @@ h2 {
   border-radius: 4px;
   width: 408px;
   height: 584px;
-  display: none;
-}
-.modal.is-open {
-  display: block;
 }
 .modal-close {
   position: absolute;
@@ -529,6 +529,10 @@ h2 {
 }
 .modal-form-input-wrapper {
   position: relative;
+}
+.modal-form-input::placeholder {
+  font-family: inherit;
+  font-size: inherit;
 }
 .modal-form-input {
   border: 1px solid rgba(46, 47, 66, 0.4);
