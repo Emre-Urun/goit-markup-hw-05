@@ -22,6 +22,7 @@
     />
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/styles.css" />
+    <script src="index.js" defer></script>
   </head>
   <body>
     <header class="title">
@@ -61,7 +62,9 @@
     <main>
       <section class="first-field">
         <h1 class="first-field-title">Effective Solutions for Your Business</h1>
-        <button class="first-field-button" type="button">Order Service</button>
+        <button id="modal-open-button" class="first-field-button" type="button">
+          Order Service
+        </button>
       </section>
       <section class="two-field">
         <ul class="two-field-list">
@@ -370,9 +373,9 @@
           </li>
         </ul>
       </section>
-      <section class="backdrop is-open">
+      <section id="backdrop" class="backdrop">
         <div class="modal">
-          <div class="modal-close">
+          <div id="modal-close-button" class="modal-close">
             <svg class="modal-close-icon">
               <use href="image/icon.svg#icon-close"></use>
             </svg>

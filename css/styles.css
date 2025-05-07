@@ -138,7 +138,6 @@ h3 {
   display: flex;
   font-weight: 500;
   margin-bottom: 8px;
-  justify-content: center;
   font-weight: 600;
 }
 .two-field {
@@ -151,9 +150,6 @@ h3 {
   margin: 120px 156px;
   justify-content: space-between;
   gap: 24px;
-}
-.two-field-list p {
-  text-align: center;
 }
 .two-field-box-svg {
   display: flex;
@@ -445,6 +441,10 @@ h2 {
   height: 24px;
   fill: #fff;
 }
+.last-field-form-button:hover {
+  background-color: #404bbf;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+}
 /* Son kısmın (footer) olduğu kod burada bitiyor */
 /* Modal ögesinin kodu burada başlıyor */
 .backdrop {
@@ -457,7 +457,7 @@ h2 {
   align-items: center;
   display: none;
 }
-.backdrop.is-open {
+.is-open {
   display: flex;
 }
 .modal {
@@ -659,5 +659,4 @@ h2 {
   background-color: #404bbf;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
 }
-
 /* Modal ögesinin kodu burada bitiyor */
